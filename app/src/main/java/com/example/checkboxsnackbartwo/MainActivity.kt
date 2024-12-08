@@ -9,24 +9,19 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         val checkBoxInfo = findViewById<CheckBox>(R.id.checkbox_info)
         val textViewInfo = findViewById<TextView>(R.id.textview_info)
         val textViewRules = findViewById<TextView>(R.id.textview_rules)
-
-        checkBoxInfo.setOnCheckedChangeListener { buttonView, isChecked ->
+        checkBoxInfo.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 textViewInfo.text = "Правила дорожного движения"
                 textViewInfo.visibility = TextView.VISIBLE
-
-                // Добавьте несколько пунктов правил дорожного движения
                 val rules = """
                     1. Соблюдайте скоростной режим.
                     2. Пропускайте пешеходов на переходах.
                     3. Не пользуйтесь телефоном за рулем.
                     4. Пристегивайте ремни безопасности.
                 """.trimIndent()
-
                 textViewRules.text = rules
                 textViewRules.visibility = TextView.VISIBLE
             } else {

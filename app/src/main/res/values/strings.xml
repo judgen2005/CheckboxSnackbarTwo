@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CheckboxSnackbarTwo</string>
+    <string name="checkbox_info">Информация</string>
 </resources>

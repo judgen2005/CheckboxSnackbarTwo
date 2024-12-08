@@ -9,7 +9,7 @@
         android:id="@+id/checkbox_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Информация" />
+        android:text="@string/checkbox_info" />
 
     <TextView
         android:id="@+id/textview_info"
